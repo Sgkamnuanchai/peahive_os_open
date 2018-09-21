@@ -48,13 +48,7 @@ PROTOCOL = IoTHubTransportProvider.MQTT
 
 # String containing Hostname, Device Id & Device Key in the format:
 # "HostName=<host_name>;DeviceId=<device_id>;SharedAccessKey=<device_key>"
-# "HostName=HiVE-IoT.azure-devices.net;DeviceId=mqttSample;SharedAccessKey=djS4cXyaxlqFncLLkzzmbXEtFLWVFhaEEsYpc1zhZ0o="
-# CONNECTION_STRING = "HostName=hiveiotsuiteeaff5.azure-devices.net;DeviceId=CoolingSampleDevice_6430;SharedAccessKey=trph7ztL03F7OfH6SeUI4g6sOV+C1FSV4rLtAr5/3E0="
-CONNECTION_STRING = "HostName=peahiveiothub2.azure-devices.net;DeviceId=raspberrypi;SharedAccessKey=oqCoJGBhQOoCNTf4kaACH5TKb+7XD7tZsVzoejICgJk="
-
-# CONNECTION_STRING = "HostName=peahiveiotv2.azure-devices.net;DeviceId=hivecdf12345;SharedAccessKey=u/QZgiQ+isxKXTkkn4Hc3Oys6Ski1NjT5bTRkGTHvyw="
-
-
+CONNECTION_STRING = "HostName=xxx;DeviceId=xxx;SharedAccessKey=xxx"
 
 
 def set_certificates(client):
