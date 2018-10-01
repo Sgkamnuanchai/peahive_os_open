@@ -3,12 +3,18 @@ from __future__ import absolute_import
 from datetime import datetime
 import importlib
 import time
+import sys
+import Adafruit_DHT
+sensor = Adafruit_DHT.DHT11
+pin = 7
 while True:
+  humidity, temperature = Adafruit_DHT.read_retry(11 , 7)
   iotmodul = importlib.import_module("hive_lib.azure-iot-sdk-python.device.samples.iothub_client_sample")
   x = {}
-  x["device_id"] = 1
   x["date_time"] = datetime.now().replace(microsecond=0).isoformat()
-  x["temp"] = 24.2
+  if humidity is not None and temperature is not None:
+	x["Temp"] = temperature
+	x["Humidity"] = humidity
   x["unixtime"] = int(time.time())
   x["device_type"] = "raspi"
   time.sleep(5)
